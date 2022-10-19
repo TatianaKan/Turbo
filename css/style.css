@@ -1,0 +1,216 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-style: normal;
+  font-family: 'Inter';
+  color: #07040C;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #E2E3EF;
+  padding-top: 23px;
+  padding-bottom: 22px;
+}
+
+.header__logo {
+  display: flex;
+}
+
+
+.header__logo-img {
+  width: 55px;
+  height: 55px;
+}
+
+.header__logo-text {
+  margin-left: 10px;
+  text-align: center;
+}
+
+.logo__title {
+  font-family: 'Ubuntu';
+  font-weight: 700;
+  font-size: 24px;
+  color: #F35A05;
+}
+
+.logo__desc {
+  font-size: 13px;
+  letter-spacing: 0.01em;
+}
+
+.header__list {
+  font-family: 'Ubuntu';
+  display: flex;
+  gap: 40px;
+  font-size: 14px;
+  text-transform: uppercase;
+
+}
+
+.active {
+  color: #F35A05
+}
+
+
+.header__link:hover {
+  color: #F35A05;
+  text-decoration: underline;
+}
+
+.header__logaut {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.header__logaut-registr {
+  font-family: 'Ubuntu';
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+
+}
+
+.header__logaut-registr:hover {
+  color: #F35A05;
+
+}
+
+.header__button:hover {
+  background-color: #fff6c9;
+}
+
+.header__button {
+  border: 1px solid #000000;
+  border-radius: 30px;
+  padding: 12px 20px;
+}
+
+.burger {
+  display: none;
+}
+
+@media (max-width: 1200px) {}
+
+@media (max-width: 1020px) {
+  .header__list {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 945px) {
+  .header__list {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 760px) {
+  .header__container {
+    padding-top: 16px;
+    padding-bottom: 15px;
+  }
+
+  .header__logo-img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .logo__title {
+    font-size: 20px;
+  }
+
+  .logo__desc {
+    font-size: 10px;
+  }
+
+  .header__list {
+    gap: 10px;
+    font-size: 12px;
+  }
+
+  .header__logaut {
+    gap: 10px;
+  }
+
+  .header__logaut-registr {
+    font-size: 12px;
+  }
+
+}
+
+@media (max-width: 680px) {
+  .header__container {
+    margin: 0 15px;
+    padding-top: 16px;
+    padding-bottom: 15px;
+  }
+
+  .header__logo-img {
+    width: 41px;
+    height: 41px;
+  }
+
+  .logo__title {
+    font-size: 18px;
+  }
+
+  .logo__desc {
+    font-size: 10px;
+  }
+
+  .header__logaut-registr {
+    font-size: 12px;
+  }
+
+  .header__list {
+    display: none;
+  }
+
+  .header__logaut-registr {
+    display: none;
+    font-size: 12px;
+  }
+
+  .header__button {
+    display: block;
+    margin-right: 35px;
+    padding: 10px 20px;
+  }
+
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+}

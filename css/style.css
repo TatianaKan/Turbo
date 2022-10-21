@@ -75,7 +75,6 @@ li {
   gap: 40px;
   font-size: 14px;
   text-transform: uppercase;
-
 }
 
 .active {
@@ -105,14 +104,14 @@ li {
 
 .header__logaut-registr:hover {
   color: #F35A05;
-
 }
 
-.header__button:hover {
+.button:hover {
   background-color: #fff6c9;
+  border-color: #F35A05;
 }
 
-.header__button {
+.button {
   border: 1px solid #000000;
   border-radius: 30px;
   padding: 12px 20px;
@@ -122,17 +121,108 @@ li {
   display: none;
 }
 
+/*main*/
+
+.main__container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.main__left,
+.margin-right {
+  max-width: calc(50% - 20px);
+}
+
+.main__left {
+  margin-top: 100px;
+}
+
+.main__left-title {
+  font-family: 'Ubuntu';
+  font-weight: 700;
+  font-size: 60px;
+  margin-bottom: 30px;
+}
+
+.main__left-subtitle {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 20px;
+  color: #585967;
+  margin-bottom: 40px;
+}
+
+.main__left-subtitle span {
+  color: #F35A05;
+}
+
+.main__left-button {
+  background-color: #F35A05;
+  color: #fff;
+  border-color: #F35A05;
+  padding: 22px 56px;
+}
+
+.main__left-button:hover {
+  background-color: #fff7c9;
+  color: #F35A05;
+}
+
+.main__left-par {
+  display: flex;
+  align-items: center;
+}
+
+.main__left-descr {
+  font-family: 'Inter';
+  font-size: 16px;
+  color: #808296;
+  margin-left: 30px;
+  max-width: 220px;
+}
+
+.main__right {
+  margin-top: 30px;
+}
+
+.main__right-img {
+  width: 100%;
+}
+
+
 @media (max-width: 1200px) {}
 
 @media (max-width: 1020px) {
   .header__list {
     gap: 30px;
   }
+
+  .main__left-title {
+    font-size: 50px;
+  }
 }
 
 @media (max-width: 945px) {
   .header__list {
     gap: 20px;
+  }
+
+  .main__left {
+    margin-top: 80px;
+  }
+
+  .main__left-subtitle {
+    font-size: 18px;
+  }
+
+  .main__left-button {
+    padding: 15px 30px;
+  }
+
+  .main__left-descr {
+    font-size: 14px;
+    margin-left: 20px;
   }
 }
 
@@ -171,6 +261,10 @@ li {
 }
 
 @media (max-width: 680px) {
+  .container {
+    padding: 0 15px;
+  }
+
   .header__container {
     margin: 0 15px;
     padding-top: 16px;
@@ -203,7 +297,7 @@ li {
     font-size: 12px;
   }
 
-  .header__button {
+  .button {
     display: block;
     margin-right: 35px;
     padding: 10px 20px;
@@ -212,5 +306,58 @@ li {
   .burger {
     display: block;
     cursor: pointer;
+  }
+
+  .main__left {
+    margin-top: 60px;
+  }
+
+  .main__left-title {
+    font-size: 32px;
+  }
+
+  .button {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 560px) {
+  .main__container {
+    flex-direction: column;
+    gap: 26px;
+  }
+
+  .main__left,
+  .main__right {
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  .main__left {
+    margin-top: 40px;
+  }
+
+  .main__left-title {
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  .main__left-subtitle {
+    font-size: 16px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  .main__left-par {
+    flex-direction: column;
+  }
+
+  .main__left-button {
+    padding: 18px 70px;
+    margin-bottom: 8px;
+  }
+
+  .main__right {
+    margin-top: 0;
   }
 }

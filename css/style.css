@@ -219,6 +219,67 @@ li {
   color: #585967;
 }
 
+/*knowhow*/
+.knowhow__container {
+  margin-top: 130px;
+}
+
+.knowhow__title {
+  font-family: 'Ubuntu';
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 53px;
+  text-align: center;
+}
+
+.knowhow__content {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+}
+
+.knowhow__left {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.knowhow__left-item {
+  display: flex;
+  align-items: start;
+  gap: 20px;
+  padding: 20px;
+  border: 1px dashed #E2E3EF;
+  border-radius: 15px;
+}
+
+.knowhow__left-item:hover,
+.knowhow__left-item:focus {
+  border: 1px solid #fff;
+  background: #FFFFFF;
+  box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.15);
+  border-radius: 15px;
+}
+
+.knowhow__left-title {
+  font-family: 'Ubuntu';
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.knowhow__left-descr {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 145%;
+  color: #585967;
+}
+
+.knowhow__right-img {
+  width: 100%;
+}
+
 @media (max-width: 1200px) {}
 
 @media (max-width: 1020px) {
@@ -273,6 +334,31 @@ li {
   .dignity__item-descr {
     font-size: 14px;
   }
+
+  .knowhow__content {
+    gap: 25px;
+  }
+
+  .knowhow__title {
+    font-size: 40px;
+  }
+
+  .knowhow__left {
+    margin-top: 40px;
+    gap: 25px;
+  }
+
+  .knowhow__left-item {
+    gap: 15px;
+  }
+
+  .knowhow__left-title {
+    font-size: 22px;
+  }
+
+  .knowhow__left-descr {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 760px) {
@@ -325,6 +411,32 @@ li {
   }
 
   .dignity__item-descr {
+    font-size: 12px;
+  }
+
+  .knowhow__content {
+    gap: 20px;
+  }
+
+  .knowhow__title {
+    font-size: 36px;
+  }
+
+  .knowhow__left {
+    gap: 15px;
+    margin-top: 30px;
+  }
+
+  .knowhow__left-item {
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .knowhow__left-title {
+    font-size: 20px;
+  }
+
+  .knowhow__left-descr {
     font-size: 12px;
   }
 
@@ -410,6 +522,24 @@ li {
   .dignity__item-descr {
     font-size: 10px;
   }
+
+  .knowhow__content {
+    gap: 10px;
+  }
+
+  .knowhow__title {
+    font-size: 28px;
+  }
+
+  .knowhow__left {
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .knowhow__left-title {
+    font-size: 16px;
+  }
+
 }
 
 @media (max-width: 570px) {
@@ -478,5 +608,37 @@ li {
   .dignity__item-descr {
     font-size: 14px;
     text-align: center;
+  }
+
+  .knowhow__container {
+    margin-top: 60px;
+  }
+
+  .knowhow__title {
+    font-size: 28px;
+    line-height: 125%;
+  }
+
+
+  .knowhow__left {
+    margin-top: 45px;
+  }
+
+  .knowhow__left-item {
+    gap: 20px;
+    padding: 15px;
+  }
+
+  .knowhow__left-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .knowhow__left-descr {
+    font-size: 15px;
+  }
+
+  .knowhow__right {
+    display: none;
   }
 }

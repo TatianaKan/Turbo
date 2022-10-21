@@ -190,6 +190,34 @@ li {
   width: 100%;
 }
 
+/*dignity*/
+.dignity__content {
+  display: flex;
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.dignity__item {
+  width: calc(100% - 40px);
+}
+
+.dignity__item-img {
+  margin-bottom: 10px;
+}
+
+.dignity__item-title {
+  font-family: 'Ubuntu';
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.dignity__item-descr {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 145%;
+  color: #585967;
+}
 
 @media (max-width: 1200px) {}
 
@@ -200,6 +228,14 @@ li {
 
   .main__left-title {
     font-size: 50px;
+  }
+
+  .dignity__content {
+    gap: 30px;
+  }
+
+  .dignity__item {
+    width: calc(100% - 30px);
   }
 }
 
@@ -223,6 +259,19 @@ li {
   .main__left-descr {
     font-size: 14px;
     margin-left: 20px;
+  }
+
+  .dignity__content {
+    gap: 25px;
+  }
+
+  .dignity__item-title {
+    font-size: 22px;
+    margin-bottom: 12px;
+  }
+
+  .dignity__item-descr {
+    font-size: 14px;
   }
 }
 
@@ -255,6 +304,27 @@ li {
   }
 
   .header__logaut-registr {
+    font-size: 12px;
+  }
+
+  .dignity__content {
+    gap: 20px;
+  }
+
+  .dignity__item {
+    width: calc(100% - 20px);
+  }
+
+  .dignity__item-img {
+    margin-bottom: 5px;
+  }
+
+  .dignity__item-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .dignity__item-descr {
     font-size: 12px;
   }
 
@@ -319,9 +389,30 @@ li {
   .button {
     margin-right: 0;
   }
+
+  .dignity__content {
+    gap: 10px;
+  }
+
+  .dignity__item {
+    width: 18%;
+  }
+
+  .dignity__item-img {
+    margin-bottom: 0px;
+  }
+
+  .dignity__item-title {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  .dignity__item-descr {
+    font-size: 10px;
+  }
 }
 
-@media (max-width: 560px) {
+@media (max-width: 570px) {
   .main__container {
     flex-direction: column;
     gap: 26px;
@@ -359,5 +450,33 @@ li {
 
   .main__right {
     margin-top: 0;
+  }
+
+  .dignity__content {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .dignity__item {
+    width: calc(50% - 20px);
+  }
+
+  .dignity__item-img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    justify-content: center;
+  }
+
+  .dignity__item-title {
+    font-size: 20px;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+
+  .dignity__item-descr {
+    font-size: 14px;
+    text-align: center;
   }
 }

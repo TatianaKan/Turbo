@@ -280,6 +280,132 @@ li {
   width: 100%;
 }
 
+
+/*process*/
+.process {
+  margin-top: 130px;
+}
+
+.process__title {
+  font-family: 'Ubuntu';
+  font-weight: 700;
+  font-size: 46px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.process__descr {
+  font-family: 'Inter';
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #585967;
+  margin-bottom: 50px;
+}
+
+.process__content {
+  display: flex;
+  gap: 45px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.process__item {
+  max-width: 390px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+
+}
+
+
+
+.process__item-title {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  color: #07040C;
+  z-index: 10;
+  padding-left: 10px;
+  margin-bottom: 15px;
+}
+
+
+.process__item:nth-child(2)::after {
+  position: absolute;
+  top: -5px;
+  right: 50px;
+  content: 'Ноу-Хау';
+  font-family: 'Ubuntu';
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #F35A05;
+  border: 1px solid #F35A05;
+  padding: 12px 15px;
+  border-radius: 30px;
+  margin-left: 30px;
+}
+
+.process__item-num {
+  position: absolute;
+  left: -10px;
+  top: -20px;
+  font-family: 'MV BOLI', serif;
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  background-color: #F35A05;
+  border-radius: 50%;
+}
+
+.process__item-descr {
+  font-family: 'Inter';
+  font-size: 16px;
+  color: #585967;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.process__item-video {
+  border: 1px solid #E2E3EF;
+  box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.15);
+  border-radius: 15px;
+}
+
+
+.process__item-video:focus,
+.process__item-video:hover {
+  border: 1px dashed #F35A05;
+  border-radius: 15px;
+  opacity: 0.8;
+}
+
+.process__item-img {
+  width: 100%;
+  height: 100%;
+  padding: 2px;
+}
+
+.button-play {
+  position: absolute;
+  left: 50%;
+  top: 65%;
+  transform: translate(-50%, -30%);
+  background-image: url('../image/play.png');
+  z-index: 100;
+  width: 47px;
+  height: 49px;
+}
+
+
+
+
 @media (max-width: 1200px) {}
 
 @media (max-width: 1020px) {
@@ -640,5 +766,39 @@ li {
 
   .knowhow__right {
     display: none;
+  }
+
+  .process__title {
+    font-size: 28px;
+  }
+
+  .process__content {
+    gap: 0;
+  }
+
+  .process__item {
+    margin-top: 67px;
+  }
+
+  .process__descr {
+    display: none;
+  }
+
+  .process__item-num {
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    top: -40px;
+  }
+
+  .process__item-title {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .process__item:nth-child(2)::after {
+    position: absolute;
+    right: 15px;
+
   }
 }
